@@ -32,3 +32,10 @@ yarn-error.log*
 
 # vercel
 /client/.vercel
+
+
+# server
+/server/node_modules
+
+# global
+config.env
