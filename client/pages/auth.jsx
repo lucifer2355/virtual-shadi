@@ -9,6 +9,9 @@ import {
   Grid,
 } from "@material-ui/core";
 
+import LoginForm from "../components/LoginForm";
+import RegistrationForm from "../components/RegistrationForm";
+
 const TabPanel = ({ children, index, value, ...other }) => {
   return (
     <div
@@ -47,22 +50,22 @@ const auth = () => {
             variant='fullWidth'
             aria-label='auth form tabs'
           >
-            <Tab label={<span className='tab__label'>Login</span>} />
-            <Tab label={<span className='tab__label'>Register</span>} />
+            <Tab label={<span className='text-lg'>Login</span>} />
+            <Tab label={<span className='text-lg'>Register</span>} />
           </Tabs>
 
           {/* <form className='form' noValidate autoComplete='off'> */}
           <TabPanel value={value} index={0}>
             <Grid container spacing={1} justify='center'>
               <Grid item xs={8} sm={8} md={8} className='auth__grid'>
-                <h1>Login Form</h1>
+                <LoginForm />
               </Grid>
             </Grid>
           </TabPanel>
           <TabPanel value={value} index={1}>
             <Grid container spacing={1} justify='center'>
               <Grid item xs={8} sm={8} md={8} className='auth__grid'>
-                <h1>Registration Form</h1>
+                <RegistrationForm />
               </Grid>
             </Grid>
           </TabPanel>
