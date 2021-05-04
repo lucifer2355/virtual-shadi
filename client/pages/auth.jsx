@@ -40,7 +40,7 @@ const auth = () => {
 
   return (
     <div>
-      <Container maxWidth='sm' style={{ marginTop: "20rem" }}>
+      <Container maxWidth='sm' style={{ marginTop: "10rem" }}>
         <Paper square>
           <Tabs
             value={value}
@@ -57,14 +57,14 @@ const auth = () => {
           {/* <form className='form' noValidate autoComplete='off'> */}
           <TabPanel value={value} index={0}>
             <Grid container spacing={1} justify='center'>
-              <Grid item xs={8} sm={8} md={8} className='auth__grid'>
+              <Grid item xs={8} sm={8} md={8}>
                 <LoginForm />
               </Grid>
             </Grid>
           </TabPanel>
           <TabPanel value={value} index={1}>
             <Grid container spacing={1} justify='center'>
-              <Grid item xs={8} sm={8} md={8} className='auth__grid'>
+              <Grid item xs={8} sm={8} md={8}>
                 <RegistrationForm />
               </Grid>
             </Grid>
