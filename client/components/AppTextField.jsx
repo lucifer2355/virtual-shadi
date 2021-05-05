@@ -7,7 +7,6 @@ const AppTextField = ({
   variant = "outlined",
   type,
   style,
-  error,
   onChange,
   value,
   rows,
@@ -18,7 +17,6 @@ const AppTextField = ({
     <div className='mt-4'>
       <TextField
         id={label}
-        error={error}
         label={label}
         name={name}
         variant={variant}

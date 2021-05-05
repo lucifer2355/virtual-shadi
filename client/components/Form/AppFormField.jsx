@@ -14,12 +14,11 @@ const AppFormField = ({
   style,
   ...otherProps
 }) => {
-  const { setFieldValue, errors, values } = useFormikContext();
+  const { setFieldValue, values } = useFormikContext();
 
   return (
     <>
       <AppTextField
-        error={errors[name]}
         label={label}
         name={name}
         type={type}
