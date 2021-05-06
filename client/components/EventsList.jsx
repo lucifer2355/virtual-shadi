@@ -1,9 +1,11 @@
 import React from "react";
 
+import CardComp from "./CardComp";
+
 const EventsList = () => {
   return (
-    <div>
-      <h1>Events List</h1>
+    <div className='grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
+      <CardComp />
     </div>
   );
 };
