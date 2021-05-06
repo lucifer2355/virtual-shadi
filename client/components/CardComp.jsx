@@ -5,28 +5,27 @@ import {
   CardActions,
   CardContent,
   Button,
-  Typography,
 } from "@material-ui/core";
 
-const CardComp = () => {
+const CardComp = ({ title, description }) => {
   return (
     <div className='pl-10 pr-10 mt-5'>
       <Card>
         <CardActionArea>
           <CardContent>
-            <h2 className='text-2xl'>Lizard</h2>
-            <p className='text-xm text-justify'>
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </p>
+            <div className='flex justify-between'>
+              <h2 className='text-2xl'>{title}</h2>
+              <h2 className='text-sm text-gray-400 self-end'>23/5/2021</h2>
+            </div>
+            <p className='text-xm text-justify mt-1'>{description}</p>
           </CardContent>
         </CardActionArea>
         <CardActions>
           <Button size='small' color='primary'>
-            Share
+            Edit
           </Button>
           <Button size='small' color='primary'>
-            Learn More
+            Delete
           </Button>
         </CardActions>
       </Card>
